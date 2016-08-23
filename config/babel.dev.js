@@ -22,6 +22,8 @@ module.exports = {
     require.resolve('babel-preset-react')
   ],
   plugins: [
+    // decorator support
+    require.resolve('babel-plugin-transform-decorators-legacy'),
     // function x(a, b, c,) { }
     require.resolve('babel-plugin-syntax-trailing-function-commas'),
     // await fetch()
